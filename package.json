@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "resumed init",
+    "start": "resumed --theme jsonresume-theme-elegant",
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-eloquent-mod": "^4.24.0",
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-onepage": "^0.0.3",
+    "puppeteer": "^20.9.0",
+    "resumed": "^3.0.1"
+  }
+}

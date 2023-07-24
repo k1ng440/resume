@@ -1,0 +1,64 @@
+name: Update Resume
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  check_run:
+    runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[ci skip]')"
+    steps:
+      - run: echo "${{ github.event.head_commit.message }}"
+
+  build:
+    needs: check_run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Update Resume Gist
+      uses: exuanbo/actions-deploy-gist@v1
+      with:
+        token: ${{ secrets.GIST_TOKEN }}
+        gist_id: 0bf00e5281c52c1fa5f3ba0d587d7d1a
+        file_path: resume.json
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version-file: '.nvmrc'
+
+    - name: Generate HTML and PDF
+      run: yarn export
+
+    - name: Commit published HTML
+      id: commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        if [ -n "$(git status --porcelain index.html)" ]; then
+          git add index.html
+          git commit -m "[ci skip] chore(index.html): Update resume page"
+          echo ::set-output name=exit_code::0
+        else
+          echo ::set-output name=exit_code::1
+        fi
+
+        if [ -n "$(git status --porcelain resume.pdf)" ]; then
+          git add index.html
+          git commit -m "[ci skip] chore(resume.pdf): Update resume pdf"
+          echo ::set-output name=exit_code::0
+        else
+          echo ::set-output name=exit_code::1
+        fi
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      if: steps.commit.outputs.exit_code == 0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        force_with_lease: true
+
+
