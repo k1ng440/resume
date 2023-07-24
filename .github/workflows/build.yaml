@@ -37,22 +37,17 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        if [ -n "$(git status --porcelain index.html resume.pdf)" ]; then
+          git add index.html resume.pdf \
+          && git commit -m "[ci skip] chore(index.html): update compiled documents" \
+          || echo "exit_code=1" >> $GITHUB_STATE \
+          && exit 0
 
-        if [ -n "$(git status --porcelain index.html)" ]; then
-          git add index.html
-          git commit -m "[ci skip] chore(index.html): Update resume page"
-          echo ::set-output name=exit_code::0
+          echo "exit_code=0" >> $GITHUB_STATE
         else
-          echo ::set-output name=exit_code::1
+          echo "exit_code=1" >> $GITHUB_STATE
         fi
 
-        if [ -n "$(git status --porcelain resume.pdf)" ]; then
-          git add index.html
-          git commit -m "[ci skip] chore(resume.pdf): Update resume pdf"
-          echo ::set-output name=exit_code::0
-        else
-          echo ::set-output name=exit_code::1
-        fi
     - name: Push changes
       uses: ad-m/github-push-action@master
       if: steps.commit.outputs.exit_code == 0
