@@ -56,4 +56,20 @@ jobs:
         branch: ${{ github.ref }}
         force_with_lease: true
 
+  # Page does not deploy if code is pushed with {{ GITHUB_TOKEN }} thus
+  # we need this to force push the changes
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
