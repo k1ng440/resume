@@ -39,9 +39,8 @@
   ],
   "education": [
     {
-      "institution": "Sunnydale High School",
       "area": "Science",
-      "studyType": "GCSE A level (High School)",
+      "studyType": "GCSE A level",
       "startDate": "2007-06-01",
       "endDate": "2009-06-30"
     }
