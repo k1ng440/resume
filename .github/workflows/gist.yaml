@@ -29,8 +29,8 @@ jobs:
       with:
         node-version-file: '.nvmrc'
 
-    - name: Generate HTML and PDF
-      run: yarn export
+    - run: yarn
+    - run: yarn export
 
     - name: Commit published HTML
       id: commit
