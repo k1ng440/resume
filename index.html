@@ -1,1109 +1,771 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Asaduzzaman Pavel</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z1lat9');
-  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
-    url('fonts/icomoon.woff?z1lat9') format('woff'),
-    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+<!doctype html>
+<html>
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-gitlab .path1:before {
-  content: "\e906";
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path2:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
-.icon-gitlab .path3:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path4:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(252, 163, 38);
-}
-.icon-gitlab .path5:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
-.icon-gitlab .path6:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path7:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: rgb(252, 163, 38);
-}
-.icon-gitlab .path8:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
-.icon-meetup .path1:before {
-  content: "\e901";
-  color: rgb(255, 255, 255);
-}
-.icon-meetup .path2:before {
-  content: "\e902";
-  margin-left: -1.5em;
-  color: rgb(240, 1, 1);
-}
-.icon-meetup .path3:before {
-  content: "\e903";
-  margin-left: -1.5em;
-  color: rgb(3, 3, 3);
-}
-.icon-blogger:before {
-  content: "\e900";
-}
-.icon-exercism:before {
-  content: "\e601";
-}
-.icon-telegram:before {
-  content: "\e904";
-}
-.icon-flickr:before {
-  content: "\f16e";
-}
-.icon-medium:before {
-  content: "\f23a";
-}
-.icon-heart:before {
-  content: "\f004";
-}
-.icon-book:before {
-  content: "\f02d";
-}
-.icon-linkedin:before {
-  content: "\f08c";
-}
-.icon-twitter:before {
-  content: "\f099";
-}
-.icon-github:before {
-  content: "\f09b";
-}
-.icon-link:before {
-  content: "\f0c1";
-}
-.icon-bars:before {
-  content: "\f0c9";
-}
-.icon-pinterest:before {
-  content: "\f0d2";
-}
-.icon-googleplus:before {
-  content: "\f0d5";
-}
-.icon-circle:before {
-  content: "\f111";
-}
-.icon-code:before {
-  content: "\f121";
-}
-.icon-youtube:before {
-  content: "\f167";
-}
-.icon-stackoverflow:before {
-  content: "\f16c";
-}
-.icon-bitbucket:before {
-  content: "\f171";
-}
-.icon-tumblr:before {
-  content: "\f173";
-}
-.icon-dribbble:before {
-  content: "\f17d";
-}
-.icon-skype:before {
-  content: "\f17e";
-}
-.icon-foursquare:before {
-  content: "\f180";
-}
-.icon-gittip:before {
-  content: "\f184";
-}
-.icon-gratipay:before {
-  content: "\f184";
-}
-.icon-stackexchange:before {
-  content: "\f18d";
-}
-.icon-vimeo:before {
-  content: "\f194";
-}
-.icon-graduation-cap:before {
-  content: "\f19d";
-}
-.icon-language:before {
-  content: "\f1ab";
-}
-.icon-child:before {
-  content: "\f1ae";
-}
-.icon-behance:before {
-  content: "\f1b5";
-}
-.icon-spotify:before {
-  content: "\f1bc";
-}
-.icon-soundcloud:before {
-  content: "\f1be";
-}
-.icon-codepen:before {
-  content: "\f1cb";
-}
-.icon-hackernews:before {
-  content: "\f1d4";
-}
-.icon-lastfm:before {
-  content: "\f202";
-}
-.icon-angellist:before {
-  content: "\f209";
-}
-.icon-facebook:before {
-  content: "\f230";
-}
-.icon-instagram:before {
-  content: "\e905";
-}
-.icon-trophy:before {
-  content: "\e605";
-}
-.icon-office:before {
-  content: "\e606";
-}
-.icon-clock:before {
-  content: "\e60a";
-}
-.icon-reddit:before {
-  content: "\e609";
-}
-.icon-profile:before {
-  content: "\e600";
-}
-.icon-tools:before {
-  content: "\e034";
-}
-.icon-location:before {
-  content: "\e602";
-}
-.icon-mail:before {
-  content: "\e603";
-}
-.icon-phone:before {
-  content: "\e03f";
-}
-.icon-newspaper:before {
-  content: "\e607";
-}
-.icon-chevron-down:before {
-  content: "\e60c";
-}
-.icon-chevron-up:before {
-  content: "\e60d";
-}
-.icon-dots-three-horizontal:before {
-  content: "\e60b";
-}
-.icon-thumbs-up:before {
-  content: "\e604";
-}
-.icon-board:before {
-  content: "\e608";
-}
-
-.relative {
-  position: relative;
-}
-.clear-margin {
-  margin: 0;
-}
-.space-top {
-  margin-top: 10px;
-}
-.space-right {
-  margin-right: 10px;
-}
-.space-bottom {
-  margin-bottom: 10px;
-}
-.mr-5 {
-  margin-right: 5px;
-}
-.mr-10 {
-  margin-right: 10px;
-}
-.ml-5 {
-  margin-left: 5px;
-}
-.labels {
-  line-height: 2;
-}
-.label-keyword {
-  display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
-  margin-right: 5px;
-}
-.label-keyword:last-child {
-  margin-right: 0;
-}
-.label-keyword p {
-  margin: 0;
-}
-.label-keyword a {
-  color: white;
-}
-.label-keyword a:hover {
-  text-decoration: none;
-}
-.link-disguise {
-  color: inherit;
-}
-.link-disguise:hover {
-  color: inherit;
-}
-.clear-margin {
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .clear-margin-sm {
-    margin-bottom: 0;
-  }
-}
-.fs-lg {
-  font-size: 1.33333333em;
-  line-height: 0.75em;
-  vertical-align: -15%;
-}
-.fs-2x {
-  font-size: 2em;
-}
-.fs-3x {
-  font-size: 3em;
-}
-.fs-4x {
-  font-size: 4em;
-}
-.btn-circle-sm {
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 0;
-  outline: none !important;
-}
-/* the version when the icon file is last updated */
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Asaduzzaman Pavel</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
 @font-face {
-  font-family: 'jst-elegant';
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
-  font-weight: normal;
+  font-family: 'Josefin Sans';
   font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
 }
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'jst-elegant' !important;
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
 }
-body {
+
+@font-face {
   font-family: 'Lato';
-  background: #f0f0f0;
-  color: #333;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
 }
-.main {
-  padding: 5px;
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
-.card {
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
   background: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  min-height: 300px;
-  padding: 10px 0;
 }
-.card-nested {
-  min-height: 0;
-  border-width: 1px 0 0 0;
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
 }
-.card-nested:before,
-.card-nested:after {
-  content: " ";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
   display: table;
-}
-.card-nested:after {
   clear: both;
 }
-@media (max-width: 480px) {
-  .card-nested {
-    padding: 5px 0;
-  }
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
 }
-.background-card {
-  padding: 10px 20px;
-}
-.card-wrapper {
-  padding: 5px;
-}
-@media (max-width: 992px) {
-  .card-wrapper {
-    float: none !important;
-  }
-}
-.background-details .detail {
-  display: table;
-}
-.background-details .detail .icon {
-  min-width: 45px;
-  max-width: 45px;
-  text-align: center;
-}
-.background-details .detail .info {
-  width: 100%;
-}
-.background-details .detail .title,
-.background-details .detail .icon {
-  color: #707070;
-}
-.background-details .detail .mobile-title {
-  display: none;
-}
-@media (max-width: 480px) {
-  .background-details .detail .mobile-title {
-    display: inline-block;
-    margin-left: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-}
-.background-details .detail .icon,
-.background-details .detail .info {
-  display: table-cell;
-  padding: 0 10px;
-}
-@media (max-width: 480px) {
-  .background-details .detail {
-    display: block;
-  }
-  .background-details .detail .icon {
-    max-width: inherit;
-    min-width: inherit;
-    text-align: left;
-  }
-  .background-details .detail .icon,
-  .background-details .detail .info {
-    display: block;
-    padding: 10px 0;
-  }
-  .background-details .detail .title {
-    display: none;
-  }
-}
-.info .content.has-sidebar {
-  width: 80%;
-  box-sizing: border-box;
-  float: left;
-  padding: 0 10px;
-  border-right: 1px solid #cdcdcd;
-}
-@media (max-width: 992px) {
-  .info .content.has-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-}
-@media (max-width: 480px) {
-  .info .content.has-sidebar {
-    padding: 0 2px;
-  }
-}
-.info .sidebar {
-  margin-left: 80%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  ul {
-    padding-left: 25px;
-  }
-}
-.current-event {
-  font-size: 8px;
-  color: #5ACE24;
-  position: absolute;
-  right: 100%;
-  top: 4px;
-  left: -10px;
-}
-.mop-wrapper > p:last-child {
-  margin: 0;
-}
-/*
-    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
-*/
-.floating-nav-trigger {
-  width: 50px;
-  height: 50px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  -webkit-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  display: block;
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
-  text-align: center;
-  background-color: white;
-  font-size: 1.5em;
-  color: #357ebd;
-  z-index: 100;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  text-decoration: none !important;
+  border: 2px solid #56817A;
 }
-.floating-nav-trigger > [class^="icon-"],
-.floating-nav-trigger [class*=" icon-"],
-.floating-nav-trigger > .close-icon {
-  line-height: 50px;
+
+.summary {
+  margin: 5px 0 5px;
 }
-.floating-nav-trigger .close-icon {
-  display: none;
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
 }
-.floating-nav-trigger:hover {
-  color: #1f496e;
-  background-color: #e6e6e6;
+
+.capitalize {
+  text-transform: capitalize;
 }
-.floating-nav-trigger.is-open {
-  -webkit-box-shadow: none;
-  box-shadow: none;
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
-.floating-nav-trigger.is-open .close-icon {
-  display: inherit;
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.floating-nav-trigger.is-open .icon-bars {
-  display: none;
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
 }
-.floating-nav-trigger.is-open:hover {
-  background-color: white;
-}
-.floating-nav {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
-  -o-transition: transform 0.3s, visibility 0s 0.3s;
-  transition: transform 0.3s, visibility 0s 0.3s;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  position: fixed;
-  z-index: 50;
-  right: 10px;
-  bottom: 10px;
-  background-color: white;
-  width: 90%;
-  max-width: 400px;
-  visibility: hidden;
+
+.right-column {
+  width: auto;
   overflow: hidden;
 }
-.floating-nav ul {
-  font-size: 1.2em;
-  margin: 0;
-}
-.floating-nav ul li {
-  border-bottom: 1px solid #eff2f6;
-}
-.floating-nav ul li a {
-  padding: 20px;
-  text-decoration: none;
-  color: #357ebd;
-  display: block;
-}
-.floating-nav ul li a:hover {
-  color: #1f496e;
-}
-.floating-nav ul li:last-child {
-  border-bottom: 0;
-}
-.floating-nav.is-visible {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.3s, visibility 0s 0s;
-  -o-transition: transform 0.3s, visibility 0s 0s;
-  transition: transform 0.3s, visibility 0s 0s;
-  visibility: visible;
-}
-@media (max-width: 992px) {
-  .profile-card-wrapper {
-    position: relative;
-  }
-}
-.profile-card-wrapper .profile-card {
-  padding: 10px;
-}
-.profile-pic {
-  padding: 20px 0;
-}
-@media (max-width: 992px) {
-  .profile-pic {
-    padding: 10px 0;
-  }
-}
-.profile-pic img {
-  width: 100px;
-  height: 100px;
-}
-@media (max-width: 992px) {
-  .name {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .contact-details {
-    text-align: center;
-  }
-}
-.contact-details .detail {
-  display: table;
-  padding: 10px 0;
-}
-.contact-details .detail .icon {
-  padding: 0 10px;
-  color: #707070;
-}
-@media (max-width: 992px) {
-  .contact-details .detail .icon {
-    padding: 0 5px 0 0;
-  }
-}
-.contact-details .detail .info {
-  font-size: 0.8em;
-}
-.contact-details .detail .icon,
-.contact-details .detail .info {
-  display: table-cell;
-  vertical-align: middle;
-}
-@media (max-width: 768px) {
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (max-width: 992px) {
-  .contact-details .detail {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 10px;
-  }
-  .contact-details .detail .icon,
-  .contact-details .detail .info {
-    display: inline-block;
-  }
-}
-@media (max-width: 992px) and (min-width: 768px) {
-  .contact-details .detail {
-    float: left;
-    width: 25%;
-  }
-}
-.social-links {
-  line-height: 2.5;
-}
-.social-link {
-  margin-left: 5px;
-  min-width: 35px;
-  display: inline-block;
-}
-.social-link:first-child {
-  margin-left: 0;
-}
-.social-link:hover {
-  text-decoration: none;
-}
-.link-github {
-  color: #454545;
-}
-.link-github:hover,
-.link-github:focus {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-.link-twitter {
-  color: #33ccff;
-}
-.link-twitter:hover,
-.link-twitter:focus {
-  text-decoration: none;
-  color: #00bfff;
-}
-.link-blog {
-  color: #f36f24;
-}
-.link-blog:hover,
-.link-blog:focus {
-  text-decoration: none;
-  color: #d8560c;
-}
-.link-linkedin {
-  color: #007bb6;
-}
-.link-linkedin:hover,
-.link-linkedin:focus {
-  text-decoration: none;
-  color: #005983;
-}
-.link-skype {
-  color: #12A5F4;
-}
-.link-skype:hover,
-.link-skype:focus {
-  text-decoration: none;
-  color: #0986ca;
-}
-.link-instagram {
-  color: #e4405f;
-}
-.link-instagram:hover,
-.link-instagram:focus {
-  text-decoration: none;
-  color: #d31e40;
-}
-.link-stackoverflow {
-  color: #8e8e92;
-}
-.link-stackoverflow:hover,
-.link-stackoverflow:focus {
-  text-decoration: none;
-  color: #747479;
-}
-.link-stackexchange {
-  color: #62b0df;
-}
-.link-stackexchange:hover,
-.link-stackexchange:focus {
-  text-decoration: none;
-  color: #389bd6;
-}
-.link-lastfm {
-  color: #d12127;
-}
-.link-lastfm:hover,
-.link-lastfm:focus {
-  text-decoration: none;
-  color: #a51a1f;
-}
-.link-soundcloud {
-  color: #e8822d;
-}
-.link-soundcloud:hover,
-.link-soundcloud:focus {
-  text-decoration: none;
-  color: #cc6916;
-}
-.link-googleplus {
-  color: #dd4b39;
-}
-.link-googleplus:hover,
-.link-googleplus:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-youtube {
-  color: #dd4b39;
-}
-.link-youtube:hover,
-.link-youtube:focus {
-  text-decoration: none;
-  color: #c23321;
-}
-.link-pinterest {
-  color: #bd091f;
-}
-.link-pinterest:hover,
-.link-pinterest:focus {
-  text-decoration: none;
-  color: #8c0717;
-}
-.link-gratipay {
-  color: #630;
-}
-.link-gratipay:hover,
-.link-gratipay:focus {
-  text-decoration: none;
-  color: #331a00;
-}
-.link-vimeo {
-  color: #17b3e8;
-}
-.link-vimeo:hover,
-.link-vimeo:focus {
-  text-decoration: none;
-  color: #128fba;
-}
-.link-behance {
-  color: #2c98cf;
-}
-.link-behance:hover,
-.link-behance:focus {
-  text-decoration: none;
-  color: #2379a5;
-}
-.link-codepen {
-  color: #1c1c1c;
-}
-.link-codepen:hover,
-.link-codepen:focus {
-  text-decoration: none;
-  color: #020202;
-}
-.link-foursquare {
-  color: #fa4778;
-}
-.link-foursquare:hover,
-.link-foursquare:focus {
-  text-decoration: none;
-  color: #f91554;
-}
-.link-reddit {
-  color: #545454;
-}
-.link-reddit:hover,
-.link-reddit:focus {
-  text-decoration: none;
-  color: #3b3b3b;
-}
-.link-spotify {
-  color: #acd200;
-}
-.link-spotify:hover,
-.link-spotify:focus {
-  text-decoration: none;
-  color: #829f00;
-}
-.link-tumblr {
-  color: #2d4661;
-}
-.link-tumblr:hover,
-.link-tumblr:focus {
-  text-decoration: none;
-  color: #1d2d3e;
-}
-.link-dribbble {
-  color: #ce366f;
-}
-.link-dribbble:hover,
-.link-dribbble:focus {
-  text-decoration: none;
-  color: #a82959;
-}
-.link-facebook {
-  color: #4b6daa;
-}
-.link-facebook:hover,
-.link-facebook:focus {
-  text-decoration: none;
-  color: #3b5687;
-}
-.link-angellist {
-  color: black;
-}
-.link-angellist:hover,
-.link-angellist:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.link-bitbucket {
-  color: #205081;
-}
-.link-bitbucket:hover,
-.link-bitbucket:focus {
-  text-decoration: none;
-  color: #163758;
-}
-.link-hackernews {
-  color: #ff6600;
-}
-.link-hackernews:hover,
-.link-hackernews:focus {
-  text-decoration: none;
-  color: #cc5200;
-}
-.link-exercism {
-  color: #d81d4e;
-}
-.link-exercism:hover,
-.link-exercism:focus {
-  text-decoration: none;
-  color: #ab173e;
-}
-.link-blogger {
-  color: #FF9234;
-}
-.link-blogger:hover,
-.link-blogger:focus {
-  text-decoration: none;
-  color: #ff7701;
-}
-.link-medium {
-  color: #00AB6C;
-}
-.link-medium:hover,
-.link-medium:focus {
-  text-decoration: none;
-  color: #00784c;
-}
-.link-flickr {
-  color: black;
-}
-.link-flickr:hover,
-.link-flickr:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.link-telegram {
-  color: #3BABDD;
-}
-.link-telegram:hover,
-.link-telegram:focus {
-  text-decoration: none;
-  color: #2291c3;
-}
-.card-skills {
-  position: relative;
-}
-.skill-level {
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
-}
-.skill-level .skill-progress {
-  position: absolute;
-  border-radius: 3px;
-  bottom: 0;
-  width: 100%;
-  -webkit-transition: height 1s ease;
-}
-.skill-level .skill-progress.beginner {
-  height: 50%;
-  background: #e74c3c;
-}
-.skill-level .skill-progress.intermediate {
-  height: 70%;
-  background: #f1c40f;
-}
-.skill-level .skill-progress.advanced {
-  height: 80%;
-  background: #428bca;
-}
-.skill-level .skill-progress.master {
-  height: 95%;
-  background: #5cb85c;
-}
-.skill-info {
-  margin-left: 15px;
-}
-@media (max-width: 480px) {
-  .skill-info {
-    margin-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .quote {
-    font-size: inherit;
-  }
-}
-.icon-meetup .path2:before {
-  margin-left: 0;
-}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
 @media print {
-  a[href]:after {
-    content: none !important;
+  body {
+    margin: 0;
   }
-  .profile-card {
-    text-align: center;
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
   }
-  .profile-pic {
-    display: inline-block;
-    vertical-align: middle;
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
   }
-  .profile-pic img {
-    border-radius: 0;
+
+  .container {
+    page-break-inside: avoid;
   }
-  .name-and-profession {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
+
+  .work-container .item {
+    page-break-inside: avoid;
   }
-  .contact-details .detail {
-    position: relative;
-    float: left;
-    width: 25%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0;
-  }
-  .floating-nav,
-  .floating-nav-trigger {
+
+  .fa-external-link {
     display: none;
   }
-  .pagebreak {
-    page-break-before: always;
-  }
 }
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#references"><i class="mr-10 icon-thumbs-up"></i>References</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Asaduzzaman Pavel" src="https://s.gravatar.com/avatar/de77937057892e66fe3a65b7fbddcfca?s=100&amp;r=pg&amp;d=mm" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Asaduzzaman Pavel</b></h3><h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+880 175 565 5440</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:contact@iampavel.com" itemprop="email">contact@iampavel.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="https://iampavel.dev" target="_blank">https://iampavel.dev</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Bengali</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="https://github.com/k1ng440" target="_blank" data-toggle="tooltip" title="Asaduzzaman Pavel on github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/asaduzzamanpavel/" target="_blank" data-toggle="tooltip" title="Asaduzzaman Pavel on linkedin"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Software Engineer with a decade of experience in building robust, performant, and scalable distributed systems. Proficient in multiple programming languages and frameworks, with a passion for creating innovative software solutions. Strong technical leadership skills with a track record of successfully leading technical projects and collaborating effectively with cross-functional teams.</p>
-</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Freelance Full Stack Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Oct, 2022 - Present</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.</p>
-</li><li class="mop-wrapper"><p>Collaborated with clients to determine project scope and requirements, ensuring the timely delivery of high-quality products.</p>
-</li><li class="mop-wrapper"><p>Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Backend Engineer | Software Engineer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Mar, 2017 - Sep, 2022</span><span><i class="icon-clock mr-5"></i>5 years 7 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Saved $40,000 annually by optimizing server and storage usage, resulting in reduced operational costs.</p>
-</li><li class="mop-wrapper"><p>Developed highly scalable microservices capable of handling hundreds of thousands of requests, optimizing performance and resource utilization.</p>
-</li><li class="mop-wrapper"><p>Integrated numerous RESTful and WebSocket APIs to aggregate price based on volume, contributing to data-driven decision-making processes.</p>
-</li><li class="mop-wrapper"><p>Designed and implemented a highly scalable and fault-tolerant distributed system using Go, PostgreSQL, and Redis, achieving 99.99% uptime.</p>
-</li><li class="mop-wrapper"><p>Orchestrated Docker container clusters using Kubernetes, enabling efficient container management and scalability.</p>
-</li><li class="mop-wrapper"><p>Implemented a CI/CD pipeline using GitLab CI/CD, reducing deployment time by 80%.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Full Stack Engineer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Jun, 2016 - Feb, 2017</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Developed a hybrid ticketing platform for live events, achieving a significant user base with 100,000 views and 2,500 downloads in the first week.</p>
-</li><li class="mop-wrapper"><p>Designed and implemented an Ad-tech platform, contributing to innovative advertising solutions for clients.</p>
-</li><li class="mop-wrapper"><p>Created several prototypes for mobile and web applications, exploring new technologies and user experiences.</p>
-</li><li class="mop-wrapper"><p>Collaborated with cross-functional teams to develop and implement new features, ensuring a smooth transition and no downtime during system implementations.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Full Stack Engineer</strong>,&nbsp;<a href="https://www.vdyo.co/" target="_blank"></a></p><p class="text-muted"><small><span class="space-right">Jul, 2014 - Jun, 2016</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Led the development of a highly scalable multi-tenant video-on-demand SaaS platform, adopted by leading media companies, including AACTA.</p>
-</li><li class="mop-wrapper"><p>Incorporated advanced features such as Digital Rights Management, Video Encryption, Multi-bitrate Streaming, Heat Map Analytics, and Facebook Integration.</p>
-</li><li class="mop-wrapper"><p>Ensured user and data security with features like Custom Branding and URLs, Digital Rights Management, and Pre-Roll Advertising.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Freelance Full Stack Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Dec, 2013 - Jun, 2014</span><span><i class="icon-clock mr-5"></i>7 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.</p>
-</li><li class="mop-wrapper"><p>Collaborated with clients to determine project scope and requirements, ensuring the timely delivery of high-quality products.</p>
-</li><li class="mop-wrapper"><p>Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Full Stack Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Feb, 2011 - Nov, 2013</span><span><i class="icon-clock mr-5"></i>2 years 10 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Developed a highly scalable and fault-tolerant CRM and IMS (Inventory Management System) using PHP, MySQL, and memecached, achieving 99.99% uptime.</p>
-</li><li class="mop-wrapper"><p>Designed and implemented a CI/CD pipeline using Jenkins, reducing deployment time by 80%.</p>
-</li><li class="mop-wrapper"><p>Integreated with HugesNet, a satellite internet service provider, to provide a seamless experience service providers and customers.</p>
-</li><li class="mop-wrapper"><p>Provided high-quality support to ensure a smooth transition and no downtime during system implementations.</p>
-</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Backend</strong><div class="space-top labels"><span class="label label-keyword"><p>Go</p>
-</span><span class="label label-keyword"><p>PHP</p>
-</span><span class="label label-keyword"><p>TypeScript</p>
-</span><span class="label label-keyword"><p>JavaScript</p>
-</span><span class="label label-keyword"><p>Python</p>
-</span><span class="label label-keyword"><p>SQL</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Frontend</strong><div class="space-top labels"><span class="label label-keyword"><p>HTML / JSX</p>
-</span><span class="label label-keyword"><p>HTMX</p>
-</span><span class="label label-keyword"><p>TypeScript</p>
-</span><span class="label label-keyword"><p>JavaScript</p>
-</span><span class="label label-keyword"><p>React</p>
-</span><span class="label label-keyword"><p>Angular</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Database</strong><div class="space-top labels"><span class="label label-keyword"><p>MySQL/MariaDB</p>
-</span><span class="label label-keyword"><p>PostgreSQL</p>
-</span><span class="label label-keyword"><p>TimescaleDB</p>
-</span><span class="label label-keyword"><p>MongoDB</p>
-</span><span class="label label-keyword"><p>Redis</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Version Control</strong><div class="space-top labels"><span class="label label-keyword"><p>SVN</p>
-</span><span class="label label-keyword"><p>Git</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>DevOps</strong><div class="space-top labels"><span class="label label-keyword"><p>Kubernetes</p>
-</span><span class="label label-keyword"><p>Docker</p>
-</span><span class="label label-keyword"><p>AWS</p>
-</span><span class="label label-keyword"><p>GCP</p>
-</span><span class="label label-keyword"><p>Github/GitLab CI/CD</p>
-</span><span class="label label-keyword"><p>Jenkins</p>
-</span><span class="label label-keyword"><p>Ansible</p>
-</span><span class="label label-keyword"><p>Terraform</p>
-</span><span class="label label-keyword"><p>Pulumi</p>
-</span><span class="label label-keyword"><p>Prometheus</p>
-</span><span class="label label-keyword"><p>Grafana</p>
-</span><span class="label label-keyword"><p>ELK Stack</p>
-</span><span class="label label-keyword"><p>DataDog</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Practices</strong><div class="space-top labels"><span class="label label-keyword"><p>Serverless</p>
-</span><span class="label label-keyword"><p>Microservices</p>
-</span><span class="label label-keyword"><p>RESTful API</p>
-</span><span class="label label-keyword"><p>WebSocket</p>
-</span><span class="label label-keyword"><p>gRPC</p>
-</span><span class="label label-keyword"><p>GraphQL</p>
-</span><span class="label label-keyword"><p>Linux</p>
-</span><span class="label label-keyword"><p>TDD</p>
-</span><span class="label label-keyword"><p>BDD</p>
-</span><span class="label label-keyword"><p>Agile</p>
-</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Science, GCSE A level (High School),&nbsp;</strong>Sunnydale High School</p><p class="text-muted clear-margin"><small>Jun, 2007 - Jun, 2009</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="references"><div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References</span></div><div class="info"><h4 class="title text-uppercase">References</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested">Zayed bin Suroor Al Nahyan, Founder and CEO of Rise Enterprises RSC Limited<blockquote class="quote"><div class="mop-wrapper"><p>Asaduzzaman is a very talented and hardworking developer. He is very passionate about his work and always tries to deliver the best possible solution. He is a great team player and always ready to help others. I would highly recommend him.</p>
-</div></blockquote></li><li class="card card-nested">Azat Ahmedov, Frontend Developer at Rise Enterprises RSC Limited<blockquote class="quote"><div class="mop-wrapper"><p>Asaduzzaman is a professional developer and a honest good person. We worked in the same project 3 years together. He definitely knows what he is doing. As a senior lead backend developer, he setup project's backend infrastructure and coded it using golang and microservices - initially and continued to improve it. He is not afraid of any challenges we faced and found a solutions that worked and done the job on a large scale. His code is nice, clean and professional. I would definitely recommend him as a professional developer.</p>
-</div></blockquote></li><li class="card card-nested">Glenn Pierce, Founder and CEO of Stuffinabox Solutions<blockquote class="quote"><div class="mop-wrapper"><p>Asaduzzaman has been a great asset to our team. He developed a complex CRM and IMS system for us that has been running smoothly for years. He is a great communicator and always delivers on time. I would highly recommend him.</p>
-</div></blockquote></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
-  var toggleFloatingMenu = function() {
-    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
-    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
-  };
 
-  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-  $( "[data-toggle=tooltip]" ).tooltip();
-  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
-    e.preventDefault();
-    toggleFloatingMenu();
-  });
-  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
 
-  $("#remaining-profiles").on('show.bs.collapse', function() {
-    $( '.js-profiles-collapse > i' )
-      .removeClass( 'icon-chevron-down' )
-      .addClass( 'icon-chevron-up' );
-  });
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
 
-  $("#remaining-profiles").on('hidden.bs.collapse', function() {
-    $( '.js-profiles-collapse > i' )
-      .removeClass( 'icon-chevron-up' )
-      .addClass( 'icon-chevron-down' );
-  });
-});
-</script><script>WebFontConfig = {
-  google: { families: [ 'Lato:300,400,700:latin' ] }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();</script></body></html>
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Asaduzzaman Pavel</h1>
+            <h2>Backend Software Engineer</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text">    </h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:contact@iampavel.com" target="_blank">
+                                contact@iampavel.com
+                            </a>
+                        </h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-mobile"></i>
+                
+                        <h6 class="info-text">+880 175 565 5440</h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-globe"></i>
+                
+                        <h6 class="info-text">
+                            <a href="https://iampavel.dev/" target="_blank">
+                                iampavel.dev/
+                            </a>
+                        </h6>
+                </div>
+        
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/k1ng440" target="_blank">
+                                                 k1ng440
+                                             </a>
+                                         </h6>
+                                 </div>
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/asaduzzamanpavel/" target="_blank">
+                                                asaduzzamanpavel
+                                            </a>
+                                        </h6>
+                                </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Backend</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Go</h6>
+                                    <h6 class="main-skill skill">PHP</h6>
+                                    <h6 class="main-skill skill">TypeScript</h6>
+                                    <h6 class="main-skill skill">JavaScript</h6>
+                                    <h6 class="main-skill skill">Python</h6>
+                                    <h6 class="main-skill skill">SQL</h6>
+                                    <h6 class="main-skill skill">i18n</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Frontend</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">HTML / JSX</h6>
+                                    <h6 class="main-skill skill">HTMX</h6>
+                                    <h6 class="main-skill skill">TypeScript</h6>
+                                    <h6 class="main-skill skill">JavaScript</h6>
+                                    <h6 class="main-skill skill">React</h6>
+                                    <h6 class="main-skill skill">Angular</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Database</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">MySQL/MariaDB</h6>
+                                    <h6 class="main-skill skill">PostgreSQL</h6>
+                                    <h6 class="main-skill skill">TimescaleDB</h6>
+                                    <h6 class="main-skill skill">MongoDB</h6>
+                                    <h6 class="main-skill skill">Redis</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Version Control</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">SVN</h6>
+                                    <h6 class="main-skill skill">Git</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Operations</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Linux</h6>
+                                    <h6 class="main-skill skill">Kubernetes</h6>
+                                    <h6 class="main-skill skill">Docker</h6>
+                                    <h6 class="main-skill skill">AWS</h6>
+                                    <h6 class="main-skill skill">GCP</h6>
+                                    <h6 class="main-skill skill">Github/GitLab CI/CD</h6>
+                                    <h6 class="main-skill skill">Jenkins</h6>
+                                    <h6 class="main-skill skill">Ansible</h6>
+                                    <h6 class="main-skill skill">Terraform</h6>
+                                    <h6 class="main-skill skill">Pulumi</h6>
+                                    <h6 class="main-skill skill">Prometheus</h6>
+                                    <h6 class="main-skill skill">Grafana</h6>
+                                    <h6 class="main-skill skill">ELK Stack</h6>
+                                    <h6 class="main-skill skill">DataDog</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Practices</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Advanced</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Serverless</h6>
+                                    <h6 class="main-skill skill">Microservices</h6>
+                                    <h6 class="main-skill skill">RESTful API</h6>
+                                    <h6 class="main-skill skill">WebSocket</h6>
+                                    <h6 class="main-skill skill">gRPC</h6>
+                                    <h6 class="main-skill skill">GraphQL</h6>
+                                    <h6 class="main-skill skill">TDD</h6>
+                                    <h6 class="main-skill skill">BDD</h6>
+                                    <h6 class="main-skill skill">Agile</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Fluent)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Bengali <em>(Native)</em></h6>
+                        </li>
+                </ul>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Software Engineer with a decade of experience in building robust, performant, and scalable distributed systems. Proficient in multiple programming languages and frameworks, with a passion for creating innovative software solutions. Strong technical leadership skills with a track record of successfully leading technical projects and collaborating effectively with cross-functional teams.
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Self-employed
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2022</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Freelance Full Stack Developer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.</li>
+                        <li>Collaborated with clients to determine project scope and requirements, ensuring the timely delivery of high-quality products.</li>
+                        <li>Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Rise Enterprises RSC Limited
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">03/2017</span>
+                                <span class="endDate"> - 09/2022</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Backend Software Engineer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Saved $40,000 annually by optimizing server and storage usage, resulting in reduced operational costs.</li>
+                        <li>Developed highly scalable microservices capable of handling hundreds of thousands of requests, optimizing performance and resource utilization.</li>
+                        <li>Integrated numerous RESTful and WebSocket APIs to aggregate price based on volume, contributing to data-driven decision-making processes.</li>
+                        <li>Designed and implemented a highly scalable and fault-tolerant distributed system using Go, PostgreSQL, and Redis, achieving 99.99% uptime.</li>
+                        <li>Orchestrated Docker container clusters using Kubernetes, enabling efficient container management and scalability.</li>
+                        <li>Implemented a CI/CD pipeline using GitLab CI/CD, reducing deployment time by 80%.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Eleven Digital, Inc.
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2016</span>
+                                <span class="endDate"> - 02/2017</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Full Stack Engineer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Developed a hybrid ticketing platform for live events, achieving a significant user base with 100,000 views and 2,500 downloads in the first week.</li>
+                        <li>Designed and implemented an Ad-tech platform, contributing to innovative advertising solutions for clients.</li>
+                        <li>Created several prototypes for mobile and web applications, exploring new technologies and user experiences.</li>
+                        <li>Collaborated with cross-functional teams to develop and implement new features, ensuring a smooth transition and no downtime during system implementations.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                VDYO Pty Ltd
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">07/2014</span>
+                                <span class="endDate"> - 06/2016</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Full Stack Engineer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Led the development of a highly scalable multi-tenant video-on-demand SaaS platform, adopted by leading media companies, including AACTA.</li>
+                        <li>Incorporated advanced features such as Digital Rights Management, Video Encryption, Multi-bitrate Streaming, Heat Map Analytics, and Facebook Integration.</li>
+                        <li>Ensured user and data security with features like Custom Branding and URLs, Digital Rights Management, and Pre-Roll Advertising.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Self-employed
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">12/2013</span>
+                                <span class="endDate"> - 06/2014</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Freelance Full Stack Developer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.</li>
+                        <li>Collaborated with clients to determine project scope and requirements, ensuring the timely delivery of high-quality products.</li>
+                        <li>Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">02/2011</span>
+                                <span class="endDate"> - 11/2013</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Full Stack Developer</h4>
+        
+        
+        
+                    <ul>
+                        <li>Developed a highly scalable and fault-tolerant CRM and IMS (Inventory Management System) using PHP, MySQL, and memecached, achieving 99.99% uptime.</li>
+                        <li>Designed and implemented a CI/CD pipeline using Jenkins, reducing deployment time by 80%.</li>
+                        <li>Integreated with HugesNet, a satellite internet service provider, to provide a seamless experience service providers and customers.</li>
+                        <li>Provided high-quality support to ensure a smooth transition and no downtime during system implementations.</li>
+                    </ul>
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h5 class="italic pull-right">
+                    <span class="startDate">06/2007</span>
+                    <span class="endDate"> - 06/2009</span>
+            </h5>
+        </div>
+         
+                <h4>GCSE A level Science</h4>
+        
+              </section>
+        </div>
+        <div class="container references-container">
+            <div class="title">
+                <h3>References</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Asaduzzaman is a very talented and hardworking developer. He is very passionate about his work and always tries to deliver the best possible solution. He is a great team player and always ready to help others. I would highly recommend him.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Zayed bin Suroor Al Nahyan, Founder and CEO of Rise Enterprises RSC Limited</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Asaduzzaman is a professional developer and a honest good person. We worked in the same project 3 years together. He definitely knows what he is doing. As a senior lead backend developer, he setup project&#x27;s backend infrastructure and coded it using golang and microservices - initially and continued to improve it. He is not afraid of any challenges we faced and found a solutions that worked and done the job on a large scale. His code is nice, clean and professional. I would definitely recommend him as a professional developer.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Azat Ahmedov, Frontend Developer at Rise Enterprises RSC Limited</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Asaduzzaman has been a great asset to our team. He developed a complex CRM and IMS system for us that has been running smoothly for years. He is a great communicator and always delivers on time. I would highly recommend him.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Glenn Pierce, Founder and CEO of Stuffinabox Solutions</h5>
+                </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

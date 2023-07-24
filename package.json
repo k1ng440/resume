@@ -2,15 +2,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "init": "resumed init",
-    "start": "resumed --theme jsonresume-theme-elegant",
+    "init": "npx resumed init",
+    "start": "node server.js",
     "export": "node export.js"
   },
   "dependencies": {
-    "jsonresume-theme-elegant": "^1.16.1",
-    "jsonresume-theme-eloquent-mod": "^4.24.0",
-    "jsonresume-theme-kendall": "^0.2.0",
-    "jsonresume-theme-onepage": "^0.0.3",
+    "browser-sync": "^2.29.3",
+    "jsonresume-theme-apage": "^1.0.2",
+    "jsonresume-theme-dinesh": "^0.0.7",
+    "jsonresume-theme-macchiato": "^1.1.0",
+    "jsonresume-theme-onepage-simplified": "^1.2.2",
     "puppeteer": "^20.9.0",
     "resumed": "^3.0.1"
   }

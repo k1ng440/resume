@@ -3,21 +3,21 @@
     "theme": "elegant"
   },
   "basics": {
-    "name": "Asaduzzaman Pavel",
-    "label": "Software Engineer",
+    "name": "Asad (Asaduzzaman Pavel)",
+    "label": "Backend Software Engineer",
     "email": "contact@iampavel.com",
     "phone": "+880 175 565 5440",
-    "website": "https://iampavel.dev/",
+    "website": "https://iampavel.dev",
     "summary": "Software Engineer with a decade of experience in building robust, performant, and scalable distributed systems. Proficient in multiple programming languages and frameworks, with a passion for creating innovative software solutions. Strong technical leadership skills with a track record of successfully leading technical projects and collaborating effectively with cross-functional teams.",
     "profiles": [
       {
-        "network": "github",
+        "network": "Github",
         "url": "https://github.com/k1ng440",
         "username": "k1ng440"
       },
       {
-        "network": "linkedin",
-        "url": "https://www.linkedin.com/in/asaduzzamanpavel/",
+        "network": "Linkedin",
+        "url": "https://www.linkedin.com/in/asaduzzamanpavel",
         "username": "asaduzzamanpavel"
       }
     ],
@@ -47,6 +47,7 @@
   ],
   "work": [
     {
+      "name": "Self-employed",
       "company": "Self-employed",
       "position": "Freelance Full Stack Developer",
       "location": "Bangladesh",
@@ -54,13 +55,29 @@
       "isCurrentRole": true,
       "highlights": [
         "Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.",
-        "Collaborated with clients to determine project scope and requirements, ensuring the timely delivery of high-quality products.",
         "Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems."
       ]
     },
     {
+      "name": "Allrites",
+      "company": "Allrites",
+      "position": "Backend Software Engineer (Contract)",
+      "location": "Remote",
+      "startDate": "2022-07-01",
+      "endDate": "2022-09-30",
+      "url": "https://www.allrites.com/",
+      "highlights": [
+        "Optimized the response time of the website by 2500 milliseconds, significantly improving overall user experience and performance.",
+        "Implemented staging auto shutdown during off-peak hours, resulting in cost savings and improved resource utilization.",
+        "Added auto startup/shutdown for encoding servers based on demand, ensuring efficient resource allocation and cost-effective scaling.",
+        "Built pulumi IaC (Infrastructure as Code) to streamline the deployment and management of cloud infrastructure.",
+        "Added monitoring and distributed tracking, enhancing system observability and enabling proactive issue detection and resolution."
+      ]
+    },
+    {
+      "name": "Rise Enterprises RSC Limited",
       "company": "Rise Enterprises RSC Limited",
-      "position": "Backend Engineer | Software Engineer",
+      "position": "Backend Software Engineer",
       "location": "Remote",
       "startDate": "2017-03-01",
       "endDate": "2022-09-30",
@@ -74,6 +91,7 @@
       ]
     },
     {
+      "name": "Eleven Digital, Inc.",
       "company": "Eleven Digital, Inc.",
       "position": "Full Stack Engineer",
       "location": "Remote",
@@ -87,6 +105,7 @@
       ]
     },
     {
+      "name": "VDYO Pty Ltd",
       "company": "VDYO Pty Ltd",
       "position": "Full Stack Engineer",
       "location": "Remote",
@@ -100,6 +119,7 @@
       ]
     },
     {
+      "name": "Self-employed",
       "company": "Self-employed",
       "position": "Freelance Full Stack Developer",
       "location": "Bangladesh",
@@ -112,6 +132,7 @@
       ]
     },
     {
+      "name": "Stuffinabox Solutions",
       "company": "Stuffinabox Solutions",
       "position": "Full Stack Developer",
       "location": "Remote",
@@ -128,7 +149,6 @@
   "skills": [
     {
       "name": "Backend",
-      "level": "Advanced",
       "keywords": [
         "Go",
         "PHP",
@@ -140,10 +160,8 @@
     },
     {
       "name": "Frontend",
-      "level": "Advanced",
       "keywords": [
         "HTML / JSX",
-        "HTMX",
         "TypeScript",
         "JavaScript",
         "React",
@@ -152,7 +170,6 @@
     },
     {
       "name": "Database",
-      "level": "Advanced",
       "keywords": [
         "MySQL/MariaDB",
         "PostgreSQL",
@@ -163,15 +180,13 @@
     },
     {
       "name": "Version Control",
-      "level": "Advanced",
       "keywords": [
         "SVN",
         "Git"
       ]
     },
     {
-      "name": "DevOps",
-      "level": "Advanced",
+      "name": "Operations",
       "keywords": [
         "Linux",
         "Kubernetes",
@@ -191,7 +206,6 @@
     },
     {
       "name": "Practices",
-      "level": "Advanced",
       "keywords": [
         "Serverless",
         "Microservices",
@@ -199,7 +213,6 @@
         "WebSocket",
         "gRPC",
         "GraphQL",
-        "Linux",
         "TDD",
         "BDD",
         "Agile"
