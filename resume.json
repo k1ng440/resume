@@ -161,7 +161,8 @@
     {
       "name": "Frontend",
       "keywords": [
-        "HTML / JSX",
+        "HTML",
+        "JSX",
         "TypeScript",
         "JavaScript",
         "React",
