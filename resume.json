@@ -54,6 +54,7 @@
       "startDate": "2022-10-01",
       "isCurrentRole": true,
       "highlights": [
+        "Created a wallet website for a gaming platform, automating credit/debit operations from in-game activities.",
         "Received positive feedback from clients for my exceptional communication, responsiveness, and commitment to delivering exceptional results.",
         "Provided ongoing maintenance and support for existing clients, ensuring the smooth operation of their systems."
       ]
@@ -144,6 +145,22 @@
         "Integreated with HugesNet, a satellite internet service provider, to provide a seamless experience service providers and customers.",
         "Provided high-quality support to ensure a smooth transition and no downtime during system implementations."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Krincredits",
+      "startDate": "2023-04-03",
+      "endDate": "2023-05-11",
+      "summary": "A wallet website for a gaming platform, automating credit/debit operations from in-game activities.",
+      "highlights": [
+        "PHP (laravel) based backend with MySQL database and Redis for caching.",
+        "Wallet system with credit/debit operations and transaction history.",
+        "Go based microservices for handling in-game events and credit/debit operations.",
+        "Converted PSD to HTML/CSS/JS using Bootstrap and jQuery.",
+        "Integrated with PayPal and Stripe for payment processing."
+      ],
+      "url": "https://kirincredits.com/"
     }
   ],
   "skills": [
