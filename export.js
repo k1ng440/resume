@@ -5,9 +5,9 @@ import htmlTheme from 'jsonresume-theme-macchiato'
 import pdfTheme from './onepage-simplified/index.js'
 import puppeteer from 'puppeteer'
 import { render } from 'resumed'
+import yaml from 'yaml'
 
-
-const resume = JSON.parse(await fs.readFile('resume.json', 'utf-8'))
+const resume = yaml.parse(await fs.readFile('resume.yaml', 'utf-8'))
 {
     const html = await render(resume, htmlTheme)
     fs.writeFile('index.html', html); // for github pages

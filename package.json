@@ -13,6 +13,7 @@
     "jsonresume-theme-macchiato": "^1.1.0",
     "jsonresume-theme-onepage-simplified": "^1.2.2",
     "puppeteer": "^20.9.0",
-    "resumed": "^3.0.1"
+    "resumed": "^3.0.1",
+    "yaml": "^2.3.1"
   }
 }
