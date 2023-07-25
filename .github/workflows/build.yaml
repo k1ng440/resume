@@ -18,13 +18,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Update Resume Gist
-      uses: exuanbo/actions-deploy-gist@v1
-      with:
-        token: ${{ secrets.GIST_TOKEN }}
-        gist_id: 0bf00e5281c52c1fa5f3ba0d587d7d1a
-        file_path: resume.json
-
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.nvmrc'
@@ -55,6 +48,13 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
         force_with_lease: true
+
+    - name: Update Resume Gist
+      uses: exuanbo/actions-deploy-gist@v1
+      with:
+        token: ${{ secrets.GIST_TOKEN }}
+        gist_id: 0bf00e5281c52c1fa5f3ba0d587d7d1a
+        file_path: resume.json
 
   # Page does not deploy if code is pushed with {{ GITHUB_TOKEN }} thus
   # we need this to force push the changes

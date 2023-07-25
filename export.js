@@ -8,10 +8,9 @@ import { render } from 'resumed'
 import yaml from 'yaml'
 
 const resume = yaml.parse(await fs.readFile('resume.yaml', 'utf-8'))
-{
-    const html = await render(resume, htmlTheme)
-    fs.writeFile('index.html', html); // for github pages
-}
+
+fs.writeFile('index.html', await render(resume, htmlTheme)); // for github pages
+fs.writeFile('resume.json', JSON.stringify(resume, null, 2)); // for jsonresume.org repository
 
 {
     const html = await render(resume, pdfTheme)
