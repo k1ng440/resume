@@ -4,7 +4,8 @@
   "scripts": {
     "init": "npx resumed init",
     "start": "node server.js",
-    "export": "node export.js"
+    "export": "node export.js",
+    "pdf": "killall evince; yarn export; open resume.pdf"
   },
   "dependencies": {
     "browser-sync": "^2.29.3",

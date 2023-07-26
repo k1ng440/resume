@@ -49,6 +49,17 @@ jobs:
         branch: ${{ github.ref }}
         force_with_lease: true
 
+    - name: Prepare artifact
+      run: |
+        mkdir _site
+        cp index.html resume.pdf _site/
+        chmod -v -R +rX "_site/" | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+        done
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v2
+
     - name: Update Resume Gist
       uses: exuanbo/actions-deploy-gist@v1
       with:
@@ -58,7 +69,7 @@ jobs:
 
   # Page does not deploy if code is pushed with {{ GITHUB_TOKEN }} thus
   # we need this to force push the changes
-  deploy:
+  github-page:
     needs: build
     permissions:
       pages: write
