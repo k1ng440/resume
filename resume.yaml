@@ -2,14 +2,12 @@
 meta:
   theme: elegant
 basics:
-  name: Asad (Asaduzzaman Pavel)
+  name: Asaduzzaman "Asad" Pavel
   label: Backend Software Engineer
-  email: contact@iampavel.com
+  email: contact@iampavel.dev
   phone: "+880 175 565 5440"
   website: https://iampavel.dev
-  summary: With a decade of experience in building robust, scalable distributed
-          systems, proficient in multiple programming languages, with a passion
-          for innovative solutions
+  summary: Expertise in building robust, scalable distributed systems. Proficient in Go, TypeScript, and various databases. Committed to delivering innovative solutions for complex projects
   profiles:
   - network: Github
     url: https://github.com/k1ng440
@@ -18,72 +16,39 @@ basics:
     url: https://www.linkedin.com/in/asaduzzamanpavel
     username: asaduzzamanpavel
   location: {}
-references:
-- name: Zayed bin Suroor Al Nahyan, Founder and CEO of Rise Enterprises RSC Limited
-  reference: Asaduzzaman is a very talented and hardworking developer. He is very
-    passionate about his work and always tries to deliver the best possible solution.
-    He is a great team player and always ready to help others. I would highly recommend
-    him.
-- name: Azat Ahmedov, Frontend Developer at Rise Enterprises RSC Limited
-  reference: Asaduzzaman is a professional developer and a honest good person. We
-    worked in the same project 3 years together. He definitely knows what he is doing.
-    As a senior lead backend developer, he setup project's backend infrastructure
-    and coded it using golang and microservices - initially and continued to improve
-    it. He is not afraid of any challenges we faced and found a solutions that worked
-    and done the job on a large scale. His code is nice, clean and professional. I
-    would definitely recommend him as a professional developer.
-- name: Glenn Pierce, Founder and CEO of Stuffinabox Solutions
-  reference: Asaduzzaman has been a great asset to our team. He developed a complex
-    CRM and IMS system for us that has been running smoothly for years. He is a great
-    communicator and always delivers on time. I would highly recommend him.
 work:
 - name: Self-employed
   company: Self-employed
-  position: Freelance Full Stack Developer
+  position: Freelance
   location: Bangladesh
   startDate: '2022-10-01'
   isCurrentRole: true
   highlights:
-  - Created a wallet website in PHP and Go for a gaming platform, automating credit/debit operations
-    from in-game activities.
-  - Received positive feedback from clients for my exceptional communication, responsiveness,
-    and commitment to delivering exceptional results.
+  - Developed a PHP and Go-based microtransaction wallet for an online game, automating processes and achieving real-time transaction processing, eliminating manual processing delays.
 - name: Allrites
   company: Allrites
   position: Backend Software Engineer (Contract)
-  location: Remote
+  location: Singapore
   startDate: '2022-09-01'
-  endDate: '2022-11-15'
+  endDate: '2022-12-03'
   url: https://www.allrites.com/
   highlights:
-  - Optimized the response time of the website by 2500 milliseconds, significantly improving overall
-    user experience and performance.
-  - Built pulumi IaC (Infrastructure as Code) with staging auto shutdown during off-peak
-    hours to streamline the deployment and management of cloud infrastructure, optimizing resource utilization and enhancing cost-effectiveness.
-- name: Rise Enterprises RSC Limited
-  company: Rise Enterprises RSC Limited
+  - Successfully reduced website response time from 3.7 seconds to sub-second levels through extensive code optimization on both the frontend and backend.
+  - Architected and developed multi-region Infrastructure as Code (IaC) utilizing Kubernetes and AWS services.
+- name: Coinread
+  company: Coinread
   position: Backend Software Engineer
-  location: Remote
+  location: United Kingdom
   startDate: '2017-03-01'
-  endDate: '2022-09-30'
+  endDate: '2022-08-30'
   highlights:
-  - Collaborated with cross-functional teams to successfully deliver complex projects on time and within
-    budget, fostering effective communication and teamwork.
+  - Architected and implemented backend microservices in Golang for coinread.com
   - Saved $40,000 annually by optimizing server and storage usage, resulting in reduced operational costs.
-  - Designed and implemented a highly scalable and fault-tolerant distributed system using Go, PostgreSQL,
-    Kafka, and Redis, achieving 99.99% uptime.
-  - Integrated over 300 RESTful and WebSocket APIs to aggregate price based on market volume.
-  - Developed and applied a robust data filtering algorithm to efficiently identify and eliminate bad data,
-    ensuring data accuracy.
-  - Orchestrated Docker container clusters using Kubernetes, enabling efficient container
-    management and scalability.
-  - Implemented a CI/CD pipeline, reducing deployment time by 80%.
-
-
-  - Mentored and onboarded new team members, sharing knowledge and expertise to foster their professional
-    growth within the organization.
-  - Conducted regular code reviews and provided constructive feedback to team members, fostering a culture
-    of code quality and continuous improvement.
+  - Demonstrated expertise in defining crucial business and technical prerequisites, skillfully aligning internal strategies with them to achieve broader organizational goals.
+  - Presented technical solutions and project updates to stakeholders, facilitating informed decision-making and project progress tracking.
+  - Spearheaded the implementation of innovative concepts, including crypto identity, outlier detection, and trust-score algorithms, enhancing data accuracy and bolstering user trust in the platform.
+  - Mentored and provided technical guidance to junior engineers, fostering skill development and promoting a culture of knowledge sharing within the team.
+  - Leveraged cutting-edge technologies like Kubernetes, Ansible, Docker, and Terraform to streamline deployment processes and maintain an agile and responsive development environment.
 - name: Eleven Digital, Inc.
   company: Eleven Digital, Inc.
   position: Full Stack Engineer
@@ -91,100 +56,83 @@ work:
   startDate: '2016-06-01'
   endDate: '2017-02-28'
   highlights:
-  - Developed a hybrid ticketing platform for live events with Angular, Ionic and Node.js, achieving a significant
-    user base with 100,000 views and 2,500 downloads in the first week.
-  - Designed and implemented an Ad-tech platform, contributing to innovative advertising
-    solutions for clients.
-  - Created several prototypes for mobile and web applications, exploring new technologies
-    and user experiences.
+  - Developed a hybrid ticketing platform for live events with Angular, Ionic and Node.js, resulting in 100,000 views and 2,500 downloads within the initial week.
+  - Designed and implemented an Ad-tech platform, contributing to innovative advertising solutions for clients.
 - name: VDYO Pty Ltd
   company: VDYO Pty Ltd
   position: Full Stack Engineer
-  location: Remote
+  location: Australia
   startDate: '2014-07-01'
   endDate: '2016-06-30'
   url: https://www.vdyo.co/
   highlights:
-  - Developed a highly scalable and fault-tolerant multi-tenant video-on-demand Software
-    as a Service (SaaS) platform using PHP, MySQL, Redis, and AWS.
-  - The platform was successfully adopted by leading media companies, including AACTA,
-    providing them with a robust and efficient video streaming solution.
-  - Incorporated advanced features such as Digital Rights Management, Video Encryption,
-    Multi-bitrate Streaming, Heat Map Analytics, and Facebook Integration.
-  - Ensured user and data security with features like Custom Branding and URLs, Digital
-    Rights Management, and Pre-Roll Advertising.
-- name: Self-employed
-  company: Self-employed
-  position: Freelance Full Stack Developer
+  - Developed a highly scalable and fault-tolerant multi-tenant video-on-demand Software as a Service (SaaS) platform using PHP, MySQL, Redis, and AWS.
+  - The platform was successfully adopted by leading media companies, including AACTA, providing them with a robust and efficient video streaming solution.
+  - Incorporated advanced features such as Digital Rights Management, Video Encryption, Multi-bitrate Streaming, Heat Map Analytics, and Facebook Integration.
+- name: CodeGenie
+  company: CodeGenie
+  position: Founder
   location: Bangladesh
   startDate: '2013-12-01'
   endDate: '2014-06-30'
   highlights:
-  - Received positive feedback from clients for my exceptional communication, responsiveness,
-    and commitment to delivering exceptional results.
+    - Engineered automation tools for purchasing limited stock items, enabling seamless access to coveted limited edition products.
+    - Received positive feedback from clients for exceptional communication, responsiveness, and commitment to delivering exceptional results.
 - name: Stuffinabox Solutions
   company: Stuffinabox Solutions
   position: Full Stack Developer
-  location: Remote
+  location: United States
   startDate: '2011-02-01'
   endDate: '2013-11-30'
   highlights:
-  - Developed a highly scalable and fault-tolerant CRM and IMS (Inventory Management
-    System) using PHP, MySQL, and memecached, achieving 99.99% uptime.
-  - Integreated with HugesNet, a satellite internet service provider for automation
-  - Provided high-quality support to ensure a smooth transition and no downtime during
-    system implementations.
+  - Designed and developed PHP-based CRM and IMS, automating manual processes for streamlined operations.
+  - Integrated with HughesNet for automation, enhancing functionality.
+  - Ensured smooth system transitions and zero downtime through high-quality support.
 skills:
 - name: Backend
   keywords:
-  - Go
-  - PHP
-  - TypeScript
-  - JavaScript
   - Node.js
+  - JavaScript
+  - TypeScript
+  - Go / Golang
+  - PHP
   - Python
-  - SQL
 - name: Frontend
   keywords:
-  - HTML/CSS
+  - HTML
+  - CSS
   - TypeScript
   - JavaScript
   - React
-  - Angular
 - name: Database
   keywords:
-  - MySQL/MariaDB
+  - MySQL
   - PostgreSQL
-  - TimescaleDB
   - MongoDB
   - Redis
 - name: Operations
   keywords:
-  - Linux
-  - Kubernetes
-  - Docker
-  - Git
   - AWS
   - GCP
-  - Jenkins
   - Ansible
-  - Terraform
-  - Pulumi
-  - Prometheus
+  - Docker
+  - Git
   - Grafana
+  - Jenkins
+  - Kubernetes
+  - Linux
+  - Prometheus
+  - Terraform
 - name: Practices
   keywords:
-  - Serverless
+  - Agile
   - Microservices
   - RESTful API
+  - GraphQL
   - WebSocket
   - gRPC
-  - GraphQL
-  - TDD
-  - Agile
 languages:
 - language: English
-  fluency: Fluent
+  fluency: Professional Proficiency
 - language: Bengali
-  fluency: Native
-
+  fluency: Professional Proficiency
